@@ -1,13 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiyeshe Menus</title>
-    <link rel="stylesheet" href="fisheye.css">
-    <script src="fisheye.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fisheye Interactive Explorer</title>
+
+  <link rel="stylesheet" href="fisheye.css" />
+  <script src="fisheye.js"></script>
 </head>
 <body>
-    
+  <div class="container">
+    <header>
+      <h1>Fisheye Interactive Explorer</h1>
+      <p class="subtitle">
+        Nielsen's 10 Usability Heuristics — explore each principle through an interactive fisheye-style interface.
+      </p>
+    </header>
+
+    <main>
+      <section class="heuristics-grid" aria-label="Nielsen's 10 Usability Heuristics">
+        <article class="heuristic-card" tabindex="0"
+          data-number="1"
+          data-title="Visibility of System Status"
+          data-description="Keep users informed about what is happening through timely, appropriate feedback. The system should always let users know what is going on. Whether it is a loading spinner, a progress bar, or a confirmation message, users should never be left guessing. When people understand the current state of the system, they can make better decisions and trust the product more."
+          data-example="A file upload bar showing '75% complete' tells the user the action is working.">
+          <div class="heuristic-icon">👁️</div>
+          <div class="heuristic-number">1</div>
+          <div class="heuristic-title">Visibility of System Status</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="2"
+          data-title="Match Between System and the Real World"
+          data-description="Use familiar language and concepts from the real world, not technical jargon. Interfaces should speak the user's language. Words, icons, and workflows should mirror what users already know from everyday life. Avoid system-oriented terms and instead use natural, logical conventions."
+          data-example="A trash can icon for deleting files mirrors the physical world and is instantly understood — no instruction needed.">
+          <div class="heuristic-icon">🌍</div>
+          <div class="heuristic-number">2</div>
+          <div class="heuristic-title">Match Between System and the Real World</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="3"
+          data-title="User Control and Freedom"
+          data-description="Give users a clear emergency exit to undo or redo actions without hassle. Users often make mistakes or trigger functions by accident. The system must support easy ways to step back — through undo, redo, cancel, or a back button. This gives users confidence to explore without fear of consequences."
+          data-example="Gmail's Undo Send feature lets users recall an email within seconds of sending it.">
+          <div class="heuristic-icon">↩️</div>
+          <div class="heuristic-number">3</div>
+          <div class="heuristic-title">User Control and Freedom</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="4"
+          data-title="Consistency and Standards"
+          data-description="Follow platform conventions so users don't have to relearn familiar actions. Users should not have to wonder whether different words, icons, or actions mean the same thing. Consistency within the product and alignment with wider platform norms reduces confusion and cognitive load."
+          data-example="The floppy disk icon universally means Save — even people who have never used a floppy disk recognize it.">
+          <div class="heuristic-icon">📏</div>
+          <div class="heuristic-number">4</div>
+          <div class="heuristic-title">Consistency and Standards</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="5"
+          data-title="Error Prevention"
+          data-description="Design carefully to prevent problems from occurring in the first place. The best error message is one that never needs to appear. Good design anticipates user mistakes and either eliminates the possibility of errors or asks users to confirm before taking an irreversible action."
+          data-example="A form that grays out the Submit button until all required fields are correctly filled prevents incomplete submissions entirely.">
+          <div class="heuristic-icon">🛡️</div>
+          <div class="heuristic-number">5</div>
+          <div class="heuristic-title">Error Prevention</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="6"
+          data-title="Recognition Rather Than Recall"
+          data-description="Make options and actions visible so users don't have to memorize information. Human memory is limited. Interfaces should surface relevant options, actions, and objects so users recognize them rather than trying to remember them from scratch."
+          data-example="A dropdown menu showing all available options is better than asking users to type a command they must recall from memory.">
+          <div class="heuristic-icon">🧠</div>
+          <div class="heuristic-number">6</div>
+          <div class="heuristic-title">Recognition Rather Than Recall</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="7"
+          data-title="Flexibility and Efficiency of Use"
+          data-description="Support shortcuts for expert users while keeping the interface simple for beginners. A well-designed system works for both novice and experienced users. Beginners benefit from clear step-by-step guidance, while power users need shortcuts and customization options to work faster."
+          data-example="Ctrl+C / Ctrl+V speeds things up for frequent users without removing the right-click menu for new ones.">
+          <div class="heuristic-icon">⚡</div>
+          <div class="heuristic-number">7</div>
+          <div class="heuristic-title">Flexibility and Efficiency of Use</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="8"
+          data-title="Aesthetic and Minimalist Design"
+          data-description="Remove irrelevant information — every extra element competes with what actually matters. Visual clutter reduces usability. Every unnecessary element on a screen dilutes the importance of the elements that do matter. Design should communicate what is essential and hide or eliminate the rest."
+          data-example="Google's homepage is famously clean, keeping the search bar as the clear focal point with minimal distractions.">
+          <div class="heuristic-icon">✨</div>
+          <div class="heuristic-number">8</div>
+          <div class="heuristic-title">Aesthetic and Minimalist Design</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="9"
+          data-title="Help Users Recognize, Diagnose, and Recover From Errors"
+          data-description="Write clear error messages that explain the problem and suggest a solution. When errors happen, the system must help users understand what went wrong and how to fix it — in plain language, without error codes. Messages should be specific, polite, and constructive."
+          data-example="'Password must be at least 8 characters and include a number' is far more helpful than just 'Invalid password.'">
+          <div class="heuristic-icon">🚑</div>
+          <div class="heuristic-number">9</div>
+          <div class="heuristic-title">Help Users Recognize, Diagnose, and Recover From Errors</div>
+        </article>
+
+        <article class="heuristic-card" tabindex="0"
+          data-number="10"
+          data-title="Help and Documentation"
+          data-description="Provide easy-to-find help that focuses on the user's task, not the system's complexity. Even the best-designed system may need documentation. Help content should be easy to search, focused on real user tasks, and presented in clear steps. Ideally, help is built into the interface contextually."
+          data-example="A tooltip that appears when hovering over an unfamiliar icon gives just-in-time help without sending the user away to a manual.">
+          <div class="heuristic-icon">📘</div>
+          <div class="heuristic-number">10</div>
+          <div class="heuristic-title">Help and Documentation</div>
+        </article>
+      </section>
+
+      <p class="instructions">
+        Hover over a card to explore the fisheye effect. Click or tap a card to view more details.
+      </p>
+
+      <section class="team-credits" aria-label="Team credits">
+        <h3>Project Team</h3>
+        <div class="team-grid">
+          <span class="team-member">Member 1</span>
+          <span class="team-member">Member 2</span>
+          <span class="team-member">Member 3</span>
+          <span class="team-member">Member 4</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="fisheye-lens" id="fisheyeLens" aria-hidden="true"></div>
+
+  <div class="detail-overlay" id="detailOverlay" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="detail-content">
+      <button class="close-btn" id="closeBtn" aria-label="Close detail view">&times;</button>
+      <div class="detail-number" id="detailNumber">1</div>
+      <h2 class="detail-title" id="detailTitle">Visibility of System Status</h2>
+      <p class="detail-description" id="detailDescription">
+        Keep users informed about what is happening through timely, appropriate feedback.
+      </p>
+      <div class="detail-example">
+        <h4>Example</h4>
+        <p id="detailExample">
+          A file upload bar showing "75% complete" tells the user the action is working.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
 </body>
 </html>
