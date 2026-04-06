@@ -436,3 +436,26 @@ h1 {
         min-height: 150px;
     }
 }
+
+.heuristic-card {
+    min-height: 120px; /* smaller since no text */
+    padding: 1.5rem;
+}
+
+/* BIGGER default icons */
+.heuristic-icon {
+    font-size: 3rem;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Grow icon on hover */
+.heuristic-card:hover .heuristic-icon {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/* Even bigger when active */
+.heuristic-card.active .heuristic-icon {
+    transform: scale(1.8);
+}
+
